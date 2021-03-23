@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icoder</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="na">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand logo  " href="#">icoder</a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-md-5 mb-2  mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="services.html">Services</a>
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="video.html">Videos</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex mb-2">
+                        <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-danger me-2" type="submit">Search</button>
+                    </form>
+                    <div class="mx-2">
+                        <button class="btn btn-danger me-2 mb-2 " type="submit" data-bs-toggle="modal"
+                            data-bs-target="#lModal">Log In</button>
+                        <button class="btn btn-danger  mb-2" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#sModal">Sing Up</button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- nav end here -->
+    <!-- login -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="lModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Log In to icoder</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  sing up -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="sModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign In to icoder</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                           
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Comfrim Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- home section start here -->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active himg">
+                <img src="img/img/a4.jpg" class="d-block w-100 img-fluid" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    <h1>icoder </h1>
+                    <p class="lead ">Which You Want To Select For Feature....We Also Thanksful For Help you</p>
+                    <a href="video.html"><button class="btn btn-success mb-2" type="submit">Front End</button></a>
+                    <a href="video.html"><button class="btn btn-primary mb-2" type="submit">Back End</button></a>
+                    <a href="video.html"> <button class="btn btn-danger mb-2" type="submit">Full Stack</button></a>
+
+
+
+                </div>
+            </div>
+            <div class="carousel-item himg">
+                <img src="img/img/a.2.jpg" class="d-block w-100 img-fluid " alt="...">
+                <div class="carousel-caption  d-md-block">
+                    <h1>icoder </h1>
+                    <p class="lead">Which You Want To Select For Feature....We Also Thanksful For Help you</p>
+                    <button class="btn btn-success mb-2" type="submit">Front End</button>
+                    <button class="btn btn-primary mb-2" type="submit">Back End</button>
+                    <button class="btn btn-danger mb-2" type="submit">Full Stack</button>
+
+                </div>
+            </div>
+            <div class="carousel-item himg">
+                <img src="img/img/a3.jpg" class="d-block w-100 img-fluid" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h1>icoder </h1>
+                    <p class="lead">Which You Want To Select For Feature....We Also Thanksful For Help you</p>
+                    <button class="btn btn-success mb-2" type="submit">Front End</button>
+                    <button class="btn btn-primary mb-2" type="submit">Back End</button>
+                    <button class="btn btn-danger mb-2" type="submit">Full Stack</button>
+
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- end the home -->
+    <div class="services " id="video">
+        <h1 class="text-center my-5">Product</h1>
+        <div class="container ">
+            <div class="row text-center ">
+                <div class="col-md-4 my-2  ">
+                    <div class="card">
+                        <img src="img/img/python.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Paython</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="video.html" class="btn btn-primary">Watch Now</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 my-2 ">
+                    <div class="card">
+                        <img src="img/img/php.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Php</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="video.html" class="btn btn-primary">Watch Now</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 my-2">
+                    <div class="card">
+                        <img src="img/img/python.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Django</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="video.html" class="btn btn-primary">Watch Now</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 my-2  ">
+                    <div class="card">
+                        <img src="img/img/html.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Html</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="video.html" class="btn btn-primary">Watch Now</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 my-2 ">
+                    <div class="card">
+                        <img src="img/img/css.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Css</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="video.html" class="btn btn-primary">Watch Now</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 my-2">
+                    <div class="card">
+                        <img src="img/img/js.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Java Script</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="video.html" class="btn btn-primary">Watch Now</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- services end here -->
+
+    <!-- fotter start the here -->
+    <footer class="bg-dark text-white text-center">
+        &COPY;icoder devloper 2021
+    </footer>
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
